@@ -1,1 +1,5 @@
-a.exe
+*.exe
+*.out
+zig-cache/
+zig-out/
+.ccls-cache/

@@ -32,13 +32,8 @@ pub fn main() !void {
     }
     var total: usize = 28123 * (1 + 28123) / 2;
     var map_iter = sum_abund.keyIterator();
-    while (true) {
-        var value = map_iter.next();
-        if (value == null) {
-            break;
-        } else {
-            total -= value.?.*;
-        }
+    while (map_iter.next()) |val| {
+        total -= val.*;
     }
     std.debug.print("{}\n", .{total});
 }
