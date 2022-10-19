@@ -35,5 +35,6 @@ pub fn main() !void {
     while (map_iter.next()) |val| {
         total -= val.*;
     }
-    std.debug.print("{}\n", .{total});
+    const stdout = std.io.getStdOut().writer();
+    try stdout.print("{}\n", .{total});
 }
