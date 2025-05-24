@@ -1,5 +1,8 @@
-*.exe
-*.out
+**/*.exe
+**/*.out
 zig-cache/
 zig-out/
 .ccls-cache/
+**/.DS_Store
+**/*.cmi
+**/*.cmo
