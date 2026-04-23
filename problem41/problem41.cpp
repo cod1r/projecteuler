@@ -22,8 +22,6 @@ bool check_prime(int n) {
   int root = (int)std::sqrt(n);
   for (int factor = 2; factor <= root + 1; ++factor) {
     if (n % factor == 0) {
-      if (n == 987654321)
-        std::println("{} {}", n, factor);
       return false;
     }
   }
