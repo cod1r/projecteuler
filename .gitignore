@@ -8,3 +8,4 @@ zig-out/
 **/*.cmo
 **/*.cmx
 **/*.o
+**/*.txt
